@@ -12,7 +12,7 @@ export function CardList() {
     setApes(data[page])
   }, [loading, page])
 
-  const handlePage = (index: number):void => {
+  const handlePage = (index: number): void => {
     setPage(index)
   }
 
@@ -25,11 +25,11 @@ export function CardList() {
       </div>
       <div className="flex justify-center mt-5">
         {!loading && <div>
-          {data.map((_,index) => {
-            return (<button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" key={index} onClick={() => handlePage(index)}>{index}</button>)
+          {data.map((_, index) => {
+            return (<button className="bg-white hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded ml-1" key={index} onClick={() => handlePage(index)}>{index}</button>)
           })}
         </div>}
       </div>
     </div>
-  ) 
+  )
 }
