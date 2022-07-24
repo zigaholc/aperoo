@@ -4,10 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
+:root {
     margin: 0;
     padding: 0;
-    background: hsl(212, 45%, 89%);
+    box-sizing: border-box;
     font-family: 'Josefin Sans';
+    background-color: #e9ecef;
 }

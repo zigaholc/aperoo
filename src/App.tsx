@@ -5,8 +5,10 @@ import { ShoppingCartProvider } from './context/ShoppingCartContext'
 function App() {
   return (
     <ShoppingCartProvider>
-      <Navbar />
-      <CardList />
+      <div className="container mx-auto">
+        <Navbar />
+        <CardList />
+      </div>
     </ShoppingCartProvider>
   )
 }

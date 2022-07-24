@@ -16,9 +16,9 @@ export function CardList() {
     setPage(index)
   }
 
-  return (
-    <div className="container mx-auto">
-      <div className="flex flex-wrap justify-between">
+  return (  
+    <section>
+      <div className="flex flex-wrap md:justify-between justify-center">
         {apes.map((ape) => (
           <Card key={ape.id} {...ape} />
         ))}
@@ -30,6 +30,6 @@ export function CardList() {
           })}
         </div>}
       </div>
-    </div>
+   </section>
   )
 }
